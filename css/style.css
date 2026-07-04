@@ -1,0 +1,1109 @@
+/* ===========================
+   Сброс стилей
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#faf7f2;
+    color:#333;
+    overflow-x:hidden;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(15px);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+header .container{
+
+    height:90px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:34px;
+    font-weight:bold;
+
+    color:#b88a44;
+
+}
+
+nav{
+
+    display:flex;
+    gap:35px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:#444;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#b88a44;
+
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+    url("../images/hero.jpg") center/cover no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    max-width:800px;
+
+    color:white;
+
+}
+
+.hero h1{
+
+    font-size:68px;
+
+    margin-bottom:25px;
+
+    line-height:1.1;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    line-height:1.7;
+
+    margin-bottom:40px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:18px 45px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    background:#c89b5d;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#b88a44;
+
+    transform:translateY(-4px);
+
+}
+/* ===========================
+   О нас
+=========================== */
+
+.about{
+    padding:120px 0;
+    background:#ffffff;
+}
+
+.about-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:70px;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text h2{
+    font-size:46px;
+    color:#b88a44;
+    margin-bottom:25px;
+}
+
+.about-text p{
+    font-size:18px;
+    line-height:1.9;
+    color:#666;
+}
+
+/* ===========================
+   Услуги
+=========================== */
+
+.services{
+
+    padding:120px 0;
+
+    background:#faf7f2;
+
+}
+
+.services h2{
+
+    text-align:center;
+
+    font-size:48px;
+
+    color:#b88a44;
+
+    margin-bottom:70px;
+
+}
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+}
+
+.service-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.service-card img{
+
+    height:230px;
+
+    object-fit:cover;
+
+}
+
+.service-card h3{
+
+    margin:25px 25px 15px;
+
+    font-size:26px;
+
+}
+
+.service-card p{
+
+    margin:0 25px;
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+.service-card span{
+
+    display:block;
+
+    margin:20px 25px;
+
+    color:#b88a44;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+.btn-small{
+
+    display:block;
+
+    margin:0 25px 25px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:#c89b5d;
+
+    color:white;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn-small:hover{
+
+    background:#b88a44;
+
+}
+/* ===========================
+   Наши мастера
+=========================== */
+
+.masters{
+    padding:120px 0;
+    background:#ffffff;
+}
+
+.masters h2{
+    text-align:center;
+    font-size:48px;
+    color:#b88a44;
+    margin-bottom:70px;
+}
+
+.masters-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:35px;
+}
+
+.master-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.master-card:hover{
+    transform:translateY(-10px);
+}
+
+.master-card img{
+    height:320px;
+    object-fit:cover;
+}
+
+.master-card h3{
+    margin:20px 0 10px;
+    font-size:28px;
+}
+
+.master-card p{
+    color:#777;
+    margin-bottom:10px;
+}
+
+.master-card span{
+    display:block;
+    color:#b88a44;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+/* ===========================
+   Галерея
+=========================== */
+
+.gallery{
+    padding:120px 0;
+    background:#faf7f2;
+}
+
+.gallery h2{
+    text-align:center;
+    font-size:48px;
+    color:#b88a44;
+    margin-bottom:70px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:18px;
+    transition:.35s;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+/* ===========================
+   Онлайн-запись
+=========================== */
+
+.booking{
+    padding:120px 0;
+    background:#ffffff;
+}
+
+.booking h2{
+    text-align:center;
+    font-size:48px;
+    color:#b88a44;
+    margin-bottom:60px;
+}
+
+.booking-form{
+    max-width:700px;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.booking-form input,
+.booking-form select{
+
+    width:100%;
+
+    padding:18px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.booking-form input:focus,
+.booking-form select:focus{
+
+    border-color:#c89b5d;
+
+}
+
+.booking-form button{
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   Контакты
+=========================== */
+
+.contacts{
+
+    padding:120px 0;
+
+    background:#faf7f2;
+
+}
+
+.contacts h2{
+
+    text-align:center;
+
+    font-size:48px;
+
+    color:#b88a44;
+
+    margin-bottom:70px;
+
+}
+
+.contacts-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+.contact-info h3{
+
+    font-size:34px;
+
+    color:#b88a44;
+
+    margin-bottom:25px;
+
+}
+
+.contact-info p{
+
+    font-size:18px;
+
+    margin-bottom:18px;
+
+    color:#666;
+
+}
+
+.map iframe{
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:45px 20px;
+
+}
+
+footer h2{
+
+    color:#c89b5d;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    color:#ccc;
+
+}
+/* ===========================
+   Адаптация под планшеты
+=========================== */
+
+@media (max-width: 992px){
+
+    .hero h1{
+        font-size:52px;
+    }
+
+    .hero p{
+        font-size:20px;
+    }
+
+    .about-container{
+        flex-direction:column;
+    }
+
+    .contacts-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ===========================
+   Адаптация под телефоны
+=========================== */
+
+@media (max-width:768px){
+
+    header .container{
+        flex-direction:column;
+        height:auto;
+        padding:20px 0;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+        margin-top:20px;
+    }
+
+    .hero{
+        padding:120px 20px 80px;
+        height:auto;
+        min-height:100vh;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .about,
+    .services,
+    .masters,
+    .gallery,
+    .booking,
+    .contacts{
+        padding:80px 0;
+    }
+
+    .about h2,
+    .services h2,
+    .masters h2,
+    .gallery h2,
+    .booking h2,
+    .contacts h2{
+        font-size:34px;
+    }
+
+    .service-card img{
+        height:220px;
+    }
+
+    .master-card img{
+        height:300px;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ===========================
+   Маленькие телефоны
+=========================== */
+
+@media (max-width:480px){
+
+    .logo{
+        font-size:28px;
+    }
+
+    nav a{
+        font-size:15px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .btn-small{
+        width:calc(100% - 50px);
+        margin:0 auto 25px;
+    }
+
+}
+/*=========================
+ Бургер-меню
+==========================*/
+
+.menu-toggle{
+
+    display:none;
+
+    width:45px;
+    height:45px;
+
+    justify-content:center;
+    align-items:center;
+
+    font-size:30px;
+
+    color:#c89b5d;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    user-select:none;
+
+}
+
+.menu-toggle:hover{
+
+    background:#f4efe8;
+
+}
+
+/*=========================
+ Мобильная версия
+==========================*/
+
+@media (max-width:768px){
+
+    header .container{
+
+        flex-direction:row;
+
+        justify-content:space-between;
+
+        align-items:center;
+
+        height:80px;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+    nav{
+
+        position:fixed;
+
+        top:80px;
+
+        right:-100%;
+
+        width:280px;
+
+        height:calc(100vh - 80px);
+
+        background:white;
+
+        display:flex;
+
+        flex-direction:column;
+
+        justify-content:flex-start;
+
+        align-items:flex-start;
+
+        padding:40px 30px;
+
+        gap:25px;
+
+        box-shadow:-10px 0 30px rgba(0,0,0,.1);
+
+        transition:.4s;
+
+    }
+
+    nav.active{
+
+        right:0;
+
+    }
+
+    nav a{
+
+        font-size:18px;
+
+        width:100%;
+
+    }
+
+}
+/*=========================
+ Анимация появления
+==========================*/
+
+.animate {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/*==================================
+ HERO PREMIUM
+==================================*/
+
+.hero{
+    position:relative;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+
+    background:url("../images/hero.jpg") center center/cover no-repeat;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.55)
+    );
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:850px;
+
+    text-align:center;
+
+    color:white;
+
+    padding:20px;
+
+    animation:heroFade 1.2s ease;
+
+}
+
+.hero-subtitle{
+
+    display:inline-block;
+
+    color:#d8b26e;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+    font-size:15px;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:74px;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+    color:#f2f2f2;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-outline{
+
+    padding:18px 40px;
+
+    border:2px solid white;
+
+    border-radius:40px;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.btn-outline:hover{
+
+    background:white;
+
+    color:#222;
+
+}
+
+@keyframes heroFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.btn,
+.btn-outline{
+
+width:100%;
+
+text-align:center;
+
+}
+
+}
+/*==================================
+ TELEGRAM BUTTON
+==================================*/
+
+.telegram-button{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    z-index:9999;
+
+}
+
+.telegram-button a{
+
+    width:65px;
+
+    height:65px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#ffffff;
+
+    border-radius:50%;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.18);
+
+    transition:.3s;
+
+}
+
+.telegram-button a:hover{
+
+    transform:translateY(-5px) scale(1.08);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+}
+
+.telegram-button img{
+
+    width:38px;
+
+    height:38px;
+
+}
+
+/* Анимация пульса */
+
+.telegram-button a::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    border:2px solid #229ED9;
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(1.8);
+
+        opacity:0;
+
+    }
+
+}
+
+/* Телефон */
+
+@media(max-width:768px){
+
+    .telegram-button{
+
+        right:18px;
+
+        bottom:18px;
+
+    }
+
+    .telegram-button a{
+
+        width:58px;
+
+        height:58px;
+
+    }
+
+    .telegram-button img{
+
+        width:34px;
+
+        height:34px;
+
+    }
+
+}

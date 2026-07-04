@@ -804,8 +804,8 @@ footer p{
 ==========================*/
 
 .animate {
-    opacity: 0;
-    transform: translateY(60px);
+    opacity: 1;
+    transform: translateY(0);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
